@@ -7,7 +7,7 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - ./react_chat_tool/src:/usr/src/app
+      - ./react_chat_tool:/usr/src/app
 
   flask_chat:
     build: ./flask_chat_tool
