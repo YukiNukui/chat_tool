@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  react_chat:
+    build: ./react_chat_tool
+    image: react_chat
+    container_name: react_server
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./react_chat_tool:/usr/src/app
+
+  flask_chat:
+    build: ./flask_chat_tool
+    image: flask_chat
+    container_name: flask_server
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./flask_chat_tool:/usr/src/app
+
+  chat_db:
+    build: ./chat_tool_db
+    image: chat_db
+    container_name: db_server
+    ports:
+      - '13306:3306'
