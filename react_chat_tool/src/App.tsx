@@ -11,7 +11,7 @@ function App() {
           <input type="text" name="ID" placeholder="ID" className="Input-box"/>
           <p className="Login-pass">パスワード</p>
           <input type="password" name="pass" placeholder="パスワード" className="Input-box"/>
-          <input type="submit" value="ログイン" className="Login-button" />
+          <button className="Login-button">ログイン</button>
           <hr className="Hr-bottom"/>
           <a href="aaa" className="Login-newlink"><p className="Login-linktext">新規登録はこちら</p></a>
         </form>
