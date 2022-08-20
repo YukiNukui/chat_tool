@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './Login.css';
+import Newreg from './Newreg';
 
-function App() {
+function Login() {
   return (
       <div className="Login">
         <form className="Login-form" method="POST" action="aaa.cgi">
@@ -13,10 +15,23 @@ function App() {
           <input type="password" name="pass" placeholder="パスワード" className="Input-box"/>
           <button className="Login-button">ログイン</button>
           <hr className="Hr-bottom"/>
-          <a href="aaa" className="Login-newlink"><p className="Login-linktext">新規登録はこちら</p></a>
+          <Link to="/Newreg" className="Login-newlink"><p className="Login-linktext">新規登録はこちら</p></Link>
         </form>
-    </div>
+      </div>
   );
+}
+
+function App() {
+  return (
+  <div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path='/Newreg' element={<Newreg />}/>
+      </Routes>
+    </Router>
+  </div>
+  )
 }
 
 export default App;

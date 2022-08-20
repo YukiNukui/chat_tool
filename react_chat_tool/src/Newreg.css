@@ -1,0 +1,135 @@
+.Newreg {
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 800px;
+  padding-top: 219px;
+  padding-left: 438px;
+  background: #1E353B 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.Newreg-form {
+  width: 405px;
+  height: 362px;
+  background: #5C6E72 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.Newreg-title{
+  margin:0px;
+  padding-top: 28px;
+  padding-left: 176px;
+  width: 52px;
+  height:17px;
+  text-align: center;
+  /* fontfamily適用されていない？→fontsizeの設定にてwidth内に収まる様に調整 要件fontsize：14px*/
+  font: normal normal bold 12.5px/17px "AppleSystemUIFont";
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.Hr-top {
+  margin-top: 24.5px;
+  margin-bottom: 0px;
+  width: 360px;
+  border: none;
+  height: 1px;
+  background-color: #FFFFFF;
+}
+
+.Newreg-ID{
+  margin-left: 92px;
+  margin-top: 32.5px;     /* 水平線を加味し、-1px */
+  margin-bottom: 0px;
+  width: 11px;
+  height: 12px;
+  text-align: left;
+  font: normal normal bold 10px/15px "AppleSystemUIFont";
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.Input-box{
+  margin-top: 4px;
+  margin-left: 82px;
+  margin-bottom: 0px;
+  padding: 0px;
+  width: 238px;         /* +borderで240px */
+  height: 30px;         /* +borderで32px */
+  background: #2B3F43 0% 0% no-repeat padding-box;
+  border: 1px solid #5C6E72;
+  border-radius: 6px;
+  color: #FFFFFF;     /* #000000だと見辛いので#FFFFFFに設定 */
+  opacity: 1;
+}
+
+.Input-box::placeholder{
+  padding-left: 16px;
+  text-align: left;
+  font: normal normal normal 12px/15px "AppleSystemUIFont";
+  letter-spacing: 0px;
+  color: #5C6E72;
+  opacity: 1;
+}
+
+.Newreg-pass{
+  margin-top: 12px;
+  margin-left: 92px;
+  margin-bottom: 0px;
+  /* fontsize10px未満は適用されず、width内にテキストが収まらないため、widthを設定しない */
+  /* width: 46px; */
+  height: 12px;
+  text-align: left;
+  font: normal normal bold 10px/15px "AppleSystemUIFont";
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.Newreg-button{
+  margin-left: 152px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  width: 100px;
+  height: 32px;
+  background: #336D7C 0% 0% no-repeat padding-box;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  opacity: 1;
+
+  font: normal normal normal 12px/15px "AppleSystemUIFont";
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+.Hr-bottom {
+  margin-top: 38.5px;
+  margin-bottom: 0px;
+  width: 360px;
+  border: none;
+  height: 1px;
+  background-color: #FFFFFF;
+}
+
+.Newreg-newlink{
+  text-decoration: none;
+ }
+
+ .Newreg-linktext {
+  margin-top: 19.5px;     /* 水平線を加味し、-1px */
+  margin-left: 143px;
+  margin-bottom: 0px;
+  width: 119px;
+  height: 15px;
+  text-align: left;
+  /* fontfamily適用されていない？→fontsizeの設定にてwidth内に収まる様に調整 要件fontsize：10px */
+  font: normal normal bold 11px/15px "AppleSystemUIFont";
+  letter-spacing: 0px;
+  color: #BADCE5;
+  opacity: 1;
+ }
