@@ -1,22 +1,42 @@
 import React from 'react';
-import './Login.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from './Login';
+
+type Message = {
+  title : string;
+  button : string;
+  link : string;
+  linkto : string;
+  bgclass : string;
+}
+
+const loginMessage : Message = {
+  title : "X.1 入社課題チャット ログイン" ,
+  button : "ログイン",
+  link : "新規登録はこちら",
+  linkto : "/Newreg",
+  bgclass : "Login"
+}
+
+const NewregMessage : Message = {
+  title : "新規登録" ,
+  button : "新規登録",
+  link : "<< ログイン画面に戻る",
+  linkto : "/",
+  bgclass : "Newreg"
+}
 
 function App() {
   return (
-      <div className="Login">
-        <form className="Login-form" method="POST" action="aaa.cgi">
-          <p className="Login-title">X.1 入社課題チャット ログイン</p>
-          <hr className="Hr-top"/>
-          <p className="Login-ID">ID</p>
-          <input type="text" name="ID" placeholder="ID" className="Input-box"/>
-          <p className="Login-pass">パスワード</p>
-          <input type="password" name="pass" placeholder="パスワード" className="Input-box"/>
-          <button className="Login-button">ログイン</button>
-          <hr className="Hr-bottom"/>
-          <a href="aaa" className="Login-newlink"><p className="Login-linktext">新規登録はこちら</p></a>
-        </form>
-    </div>
+  <div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login Message = {loginMessage} />} />
+        <Route path='/Newreg' element={<Login Message = {NewregMessage} />}/>
+      </Routes>
+    </Router>
+  </div>
   );
-}
+};
 
 export default App;
