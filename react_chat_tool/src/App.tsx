@@ -26,7 +26,6 @@ const NewregMessage : Message = {
   bgclass : "Newreg"
 }
 
-
 function App() {
   return (
   <div>
