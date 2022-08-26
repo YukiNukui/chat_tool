@@ -71,8 +71,8 @@
   .Mention-icon {
     margin-top: 14.5px;
     margin-left: 9.5px;
-    width: 32px;
-    height: 32px;
+    width: 30px;    /* border分-2 */
+    height: 30px;   /* border分-2 */
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     opacity: 1;
