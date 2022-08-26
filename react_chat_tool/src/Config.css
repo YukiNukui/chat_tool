@@ -1,0 +1,134 @@
+.Config-flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.Config-header-flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.Config-headericon-flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.Config-icon{
+    margin-top: 15.5px;
+    margin-left: 14.5px;
+    width: 28px;        /* border分-2 */
+    height: 28px;       /* border分-2 */
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+.Config-iconchange-link {
+    margin-top: 2.5px;
+    padding-left: 11px;             /* 実際は15pxだが、見た目を近づけるために調整 */
+    /* fontsize10px未満は適用されず、width内にテキストが収まらないため、widthを設定しない */
+    /* width: 30px; */
+    height: 10px;
+    text-decoration: none;
+    margin : 0px;
+    text-align: left;
+    font: normal normal bold 8px/15px "AppleSystemUIFont";
+    letter-spacing: 0px;
+    color: #BADCE5;
+    opacity: 1;
+    transform: scale(0.7);          /* fontsize10px以下は適用されないため、調整 */
+}
+
+.Config-headername-flexbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    margin-left: 6.5px;
+}
+
+.Config-name{
+    height: 12px;
+    text-align: left;
+    font: normal normal bold 10px/15px "AppleSystemUIFont";
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.Config-IDchange{
+    margin-top: 2px;
+    margin-left: -6px;          /* 実際は6.5pxだが(.Config-headername-flexboxで指定)、見た目を近づけるために調整 */
+    /* fontsize10px未満は適用されず、width内にテキストが収まらないため、widthを設定しない */
+    /* width: 47px; */
+    height: 10px;
+    text-align: left;
+    font: normal normal bold 8px/10px "AppleSystemUIFont";
+    letter-spacing: 0px;
+    color: #BADCE5;
+    opacity: 1;
+    transform: scale(0.8);      /* fontsize10px以下は適用されないため、調整 */
+}
+
+.Config-hr{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    width: 90%;
+    border: none;
+    height: 1px;
+    background-color: #5C6E72;
+}
+
+.Config-title{
+    margin-top: 10px;
+    margin-left: 15px;
+    /* fontsize10px未満は適用されず、width内にテキストが収まらないため、widthを設定しない */
+    /* width: 65px; */
+    height: 12px;
+    text-align: left;
+    font: normal normal bold 10px/15px "AppleSystemUIFont";
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.Config-pass{
+    margin-top: 5px;
+    margin-left: 14px;
+    width: 224px;
+    height: 24px;
+    background: #2B3F43 0% 0% no-repeat padding-box;
+    border: 1px solid #5C6E72;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.Config-pass::placeholder {
+    padding-left: 10px;
+    /* fontsize10px未満は適用されず、width内にテキストが収まらないため、widthを設定しない */
+    /* width: 37px; */
+    /* height: 10px; */
+    text-align: left;
+    font: normal normal normal 8px/10px "AppleSystemUIFont";
+    letter-spacing: 0px;
+    color: #5C6E72;
+    opacity: 1;
+}
+
+.Config-changebutton {
+    margin-top: 5px;
+    margin-left: 14px;
+    width: 80px;
+    height: 24px;
+    background: #336D7C 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.Config-changebutton-text {
+    margin-top: 4.5px;              /* フォントサイズが適用されないため、マージンで水平方向を調整 */
+    text-align: center; 
+    font: normal normal normal 8px/10px "AppleSystemUIFont";
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}

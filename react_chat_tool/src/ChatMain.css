@@ -48,8 +48,8 @@
   }
   
   .Talk-icon {
-    width: 30px;
-    height: 30px;
+    width: 28px;        /* border分-2 */
+    height: 28px;       /* border分-2 */
     border: 1px solid #707070;
     opacity: 1;
   }

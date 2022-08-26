@@ -1,7 +1,7 @@
 import React from 'react';
 import "./ChatMention.css"
 
-function ChatMentionItems( Contents : { Talk :string } ){
+function ChatMentionItems( Contents : { TalkInfo : { time : string; talk : string; }; }  ){
     return(
         <div>
         <div className="Mention-box-flexbox">
@@ -10,9 +10,9 @@ function ChatMentionItems( Contents : { Talk :string } ){
             <div className="Mention-contents-flexbox">
                 <div className="Mention-box-header-flexbox">
                     <div className="Mention-name">Keigo Kubo</div>
-                    <div className="Mention-time">20:15</div>
+                    <div className="Mention-time">{Contents.TalkInfo.time}</div>
                 </div>
-                <div className="Mention-sentence">{Contents.Talk}</div>
+                <div className="Mention-sentence">{Contents.TalkInfo.talk}</div>
             </div>
         </div>
         <hr className="Mention-hr-each" />
