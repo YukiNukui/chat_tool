@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from './Login';
 import Chat from './Chat';
 
@@ -52,15 +52,17 @@ TalkInfo = {
 
 function App() {
   return (
-  <div>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login Message = {LoginMessage} />} />
-        <Route path='/Newreg' element={<Login Message = {NewregMessage} />}/>
-        <Route path='/Chat' element={<Chat PersonalInfo = {PersonalInfo} TalkInfo = {TalkInfo} />}/>
-      </Routes>
-    </Router>
-  </div>
+  <>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login Message = {LoginMessage} />} />
+          <Route path='/Newreg' element={<Login Message = {NewregMessage} />}/>
+          <Route path='/Chat' element={<Chat PersonalInfo = {PersonalInfo} TalkInfo = {TalkInfo} />}/>
+        </Routes>
+      </Router>
+    </div>
+  </>
   );
 };
 
