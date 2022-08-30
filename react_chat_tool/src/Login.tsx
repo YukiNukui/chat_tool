@@ -9,10 +9,10 @@ function Login( { Message } :  { Message: { title: string; button: string; link:
           >
             <p className="Login-title">{Message.title}</p>
             <hr className="Hr-top"/>
-            <p className="Login-ID">ID</p>
-            <input type="text" name="ID" placeholder="ID" className="Input-box"/>
-            <p className="Login-pass">パスワード</p>
-            <input type="password" name="pass" placeholder="パスワード" className="Input-box"/>
+            <p className="Login-ID">ID</p>              {/* 入力必須・半角英数のみ許可(スペースは含まない) */}
+            <input type="text" name="ID" placeholder="ID" className="Input-box" required pattern="^[0-9A-Za-z]+$"/>
+            <p className="Login-pass">パスワード</p>      {/* 入力必須・半角英数のみ許可(スペースは含まない) */}
+            <input type="password" name="pass" placeholder="パスワード" className="Input-box" required pattern="^[0-9A-Za-z]+$"/>
             <button className="Login-button" formAction={Message.formaction} >{Message.button}</button>
             <hr className="Hr-bottom"/>
             <Link to={Message.linkto} className="Login-newlink"><p className="Login-linktext">{Message.link}</p></Link>
