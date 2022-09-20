@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./Login.css"
 
-const server = axios.create({
+const flaskServer = axios.create({
+
   baseURL: "http://localhost:8000" 
 });
 
 async function handleSubmit () {
-     await server.post('/login' , {
+     await flaskServer.post('/login' , {
+
       ID: "abcdef",
       pass: "12346789"
     })
@@ -24,9 +26,7 @@ function Login( { Message } :  { Message: { title: string; button: string; link:
 
   return (
     <div className={Message.bgclass}>
-      <form className="Login-form" onSubmit={handleSubmit
-  }//method="POST" action="" 
-      >
+      <form className="Login-form" onSubmit={handleSubmit} method="GET" action="" >
         <p className="Login-title">{Message.title}</p>
         <hr className="Hr-top"/>
         <p className="Login-ID">ID</p>              {/* 入力必須・半角英数のみ許可(スペースは含まない) */}
