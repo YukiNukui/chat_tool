@@ -1,4 +1,0 @@
-flask
-PyMySQL
-flask-cors
-flask_sqlalchemy
